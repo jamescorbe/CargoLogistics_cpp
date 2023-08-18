@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1205</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+    <underline>true</underline>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>SDI Transport Marketplace</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/truck.jpeg</normaloff>:/images/truck.jpeg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralWidget{
+
+border-image: url(:/images/bg.jpeg);
+
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(52, 101, 164);</string>
+   </property>
+   <property name="login" stdset="0">
+    <string/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="centralStack">
+      <widget class="QWidget" name="homePage">
+       <layout class="QGridLayout" name="gridLayout_3" columnstretch="10,0,0,0">
+        <property name="leftMargin">
+         <number>50</number>
+        </property>
+        <property name="rightMargin">
+         <number>50</number>
+        </property>
+        <property name="bottomMargin">
+         <number>50</number>
+        </property>
+        <item row="1" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="styleSheet">
+             <string notr="true">background:rgb(136, 138, 133)
+</string>
+            </property>
+            <property name="title">
+             <string>Login</string>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="2" column="1">
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <property name="spacing">
+                <number>30</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <item>
+                    <widget class="QLabel" name="loginErrorsOut">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="usernameLabel">
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(238, 238, 236);</string>
+                   </property>
+                   <property name="text">
+                    <string>                     Enter Username</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="usernameLogin">
+                   <property name="font">
+                    <font>
+                     <pointsize>23</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="1">
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <property name="spacing">
+                <number>30</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="passwordLabel">
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(238, 238, 236);</string>
+                   </property>
+                   <property name="text">
+                    <string>                    Enter Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="passwordLogin">
+                   <property name="font">
+                    <font>
+                     <pointsize>23</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background:rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="loginButton">
+                 <property name="text">
+                  <string>Login</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,0">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="quit">
+            <property name="text">
+             <string>Quit</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>21</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>                                                        SDI Transport Marketplace</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11"/>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+         </layout>
+        </item>
+        <item row="1" column="2">
+         <widget class="QWidget" name="TopPanel" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>1281</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(32, 74, 135)
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="3" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>40</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="font">
+                <font>
+                 <pointsize>19</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>            Select User type to create account</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="createDriver">
+               <property name="text">
+                <string> Driver</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="createTC">
+               <property name="text">
+                <string> Transportation company</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="createCO">
+               <property name="text">
+                <string>Cargo owner</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="createAccountPage">
+       <layout class="QFormLayout" name="formLayout_2">
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMaximumSize</enum>
+          </property>
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>50</number>
+          </property>
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>100</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>100</number>
+          </property>
+          <item row="0" column="2">
+           <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+          </item>
+          <item row="1" column="2">
+           <widget class="QGroupBox" name="Registerform_4">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#Registerform{
+
+background:rgb(136, 138, 133)
+}</string>
+            </property>
+            <property name="title">
+             <string>                                                 Register</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="1">
+              <layout class="QVBoxLayout" name="verticalLayout_18">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <property name="rightMargin">
+                <number>10</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="Usernamelabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Username</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="username">
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="passwordLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Password</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="password">
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="emailLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Email</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="email">
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="contactnumberLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Contact Number</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="contactnumber">
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="numberandstreetLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Building and Street</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="numberandStreet">
+                 <property name="font">
+                  <font>
+                   <pointsize>13</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="townorcityLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Town or City</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="townorcity">
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="countyLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>County</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="county">
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="postcodeLabel_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>Postcode</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="postcode">
+                 <property name="styleSheet">
+                  <string notr="true">background:rgb(255, 255, 255);</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="createAccountButton">
+                 <property name="text">
+                  <string>Create Account</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="Drivercredentials" stretch="0,1">
+               <property name="spacing">
+                <number>1</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QWidget" name="driverDetails" native="true">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="verticalLayoutWidget_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>9</x>
+                    <y>9</y>
+                    <width>361</width>
+                    <height>487</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="styleSheet">
+                      <string notr="true">background:rgb(238, 238, 236);</string>
+                     </property>
+                     <property name="text">
+                      <string>CPC Number</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="cpcnumber">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="styleSheet">
+                      <string notr="true">background:rgb(238, 238, 236);</string>
+                     </property>
+                     <property name="text">
+                      <string>NI number</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="ninumber">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_5">
+                     <property name="styleSheet">
+                      <string notr="true">background:rgb(238, 238, 236);</string>
+                     </property>
+                     <property name="text">
+                      <string>Driving Licence ID</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="drivinglicenceid">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_8">
+                     <property name="styleSheet">
+                      <string notr="true">background:rgb(238, 238, 236);</string>
+                     </property>
+                     <property name="text">
+                      <string>Lorry Registration Number</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="regnum">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="styleSheet">
+                      <string notr="true">background:rgb(238, 238, 236);</string>
+                     </property>
+                     <property name="text">
+                      <string>Lorry Type</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="twoAxelSmall">
+                     <property name="text">
+                      <string>2 Axel small</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="twoAxelFrozen">
+                     <property name="text">
+                      <string>2 Axel  Frozen</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="twoAxel">
+                     <property name="text">
+                      <string>2 Axel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="ThreeAxel">
+                     <property name="text">
+                      <string>3 Axel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="threeAxelFrozen">
+                     <property name="text">
+                      <string>3 Axel Frozen</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="fourAxel">
+                     <property name="text">
+                      <string>4 Axel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="sixAxel">
+                     <property name="text">
+                      <string>6 Axel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="sixAxelFrozen">
+                     <property name="text">
+                      <string>6 Axel Frozen</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="2">
+              <layout class="QVBoxLayout" name="layout">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="topMargin">
+                <number>50</number>
+               </property>
+               <property name="bottomMargin">
+                <number>50</number>
+               </property>
+               <item>
+                <widget class="QTextEdit" name="outputErrorsText">
+                 <property name="lineWrapMode">
+                  <enum>QTextEdit::NoWrap</enum>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="backToHomeButton">
+                 <property name="text">
+                  <string>Back</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userHome">
+       <widget class="QWidget" name="horizontalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="logoutBTN">
+           <property name="text">
+            <string>Logout</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="accountInfo">
+           <property name="text">
+            <string>Account Info</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons">
+         <item row="5" column="0">
+          <widget class="QWidget" name="widget" native="true"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="jobOffersBTN">
+           <property name="text">
+            <string>Job Offers</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="orderHistoryBTN">
+           <property name="text">
+            <string>Order History</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="pendingDeliveriesBTN">
+           <property name="text">
+            <string>Pending Deliveries</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="currentJobBTN">
+           <property name="text">
+            <string>Current Job</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="1">
+          <widget class="QPushButton" name="openOrdersBTN">
+           <property name="text">
+            <string>Open Orders</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="placeOrderBTN">
+           <property name="text">
+            <string>Place Order</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="OrderCreation">
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1181</width>
+          <height>785</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,0,0">
+         <property name="horizontalSpacing">
+          <number>40</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>5</number>
+         </property>
+         <item row="3" column="0">
+          <layout class="QVBoxLayout" name="sourceLayout">
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="SLlabel">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Source Location</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="SLbuildingandstreet">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Building and Street</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="buildingandstreetSL">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="SLtownorcityLabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Town or City</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="townorcitySL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="SLcountyLabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>County</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="countySL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="SLpostcodeLabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Postcode</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="postcodeSL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="1">
+          <layout class="QVBoxLayout" name="orderLayout">
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="numberandstreetLabel_9">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Order Details</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="widthlabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Width (M)    Max 2.5</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="width">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lengthlabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Length (M)    Max 13.3</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="length">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="heightlabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Height (M)      Max 2.6</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="height">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="weightlabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Weight (KG)    Max 28000</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="weight">
+             <property name="font">
+              <font>
+               <pointsize>13</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="frozen">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Frozen</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="fragile">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Fragile</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="TCComboBox">
+             <item>
+              <property name="text">
+               <string>Select Transport Company</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="calculateCost">
+             <property name="text">
+              <string>calculate cost </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="costOutput">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="18" column="3">
+          <layout class="QVBoxLayout" name="costLayout">
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>100</number>
+           </property>
+          </layout>
+         </item>
+         <item row="3" column="2">
+          <layout class="QVBoxLayout" name="verticalLayout_12"/>
+         </item>
+         <item row="18" column="0">
+          <layout class="QVBoxLayout" name="destinationLayout">
+           <item>
+            <widget class="QLabel" name="DLlabel">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Destination Location</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="DLbuildingandstreetLabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Building and Street</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="buildingandstreetDL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="DLtownorcityLabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Town or City</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="townorcityDL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="DLcountyLabel">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>County</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="countyDL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="DLpostcodeLabel_2">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string>Postcode</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="postcodeDL">
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="1">
+          <widget class="QPushButton" name="createOrderBTN">
+           <property name="text">
+            <string>Place Order</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QLabel" name="placeorderOutput">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(238, 238, 236);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="OrderBack">
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="DriverOrders">
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons_2">
+         <item row="9" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_14" stretch="2,2,2">
+           <property name="spacing">
+            <number>40</number>
+           </property>
+           <property name="leftMargin">
+            <number>40</number>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="rightMargin">
+            <number>40</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="acceptOrder">
+             <property name="text">
+              <string>Accept</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="rejectOrder">
+             <property name="text">
+              <string>Reject</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_2" native="true"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QTextEdit" name="OrderDetails"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QComboBox" name="OrderSelection"/>
+         </item>
+         <item row="12" column="0">
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="backBTN">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="TCAssignDriver">
+       <widget class="QWidget" name="horizontalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QPushButton" name="BackBTN">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons_4">
+         <item row="12" column="0">
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_4" native="true"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QComboBox" name="TCorders">
+           <item>
+            <property name="text">
+             <string>Select company order.</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QTextEdit" name="TCOrderDetails"/>
+         </item>
+         <item row="9" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_19" stretch="0,0,0,2">
+           <property name="spacing">
+            <number>40</number>
+           </property>
+           <property name="leftMargin">
+            <number>40</number>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="rightMargin">
+            <number>40</number>
+           </property>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AssignDriver">
+             <property name="font">
+              <font>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Assign Driver</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="orderStatus">
+       <widget class="QWidget" name="gridLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons_3">
+         <item row="9" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_16" stretch="2,2,0,2">
+           <property name="spacing">
+            <number>40</number>
+           </property>
+           <property name="leftMargin">
+            <number>40</number>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="rightMargin">
+            <number>40</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="loadingBTN">
+             <property name="text">
+              <string>Loading</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="onRouteBTN">
+             <property name="text">
+              <string>On Route</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="deliveredBTN">
+             <property name="text">
+              <string>Delivered</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_3" native="true"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QTextEdit" name="assignedOrderDetails"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QComboBox" name="assignedOrders">
+           <item>
+            <property name="text">
+             <string>Select an order</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>                                                                      Order Status</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="backBTN_2">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pendingDeliveries">
+       <widget class="QWidget" name="horizontalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="backBTN_3">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons_5">
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_5" native="true"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>View pending Deliveries</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QTextEdit" name="pendingOrderDetails"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QComboBox" name="pendingOrders">
+           <item>
+            <property name="text">
+             <string>Select an order</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <property name="spacing">
+            <number>40</number>
+           </property>
+           <property name="leftMargin">
+            <number>40</number>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="rightMargin">
+            <number>40</number>
+           </property>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="orderHistory">
+       <widget class="QWidget" name="horizontalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QPushButton" name="backBTN_4">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons_6">
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_6" native="true"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>View Delivered orders</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QTextEdit" name="orderhistoryDetails"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QComboBox" name="orderhistory">
+           <item>
+            <property name="text">
+             <string>Select an order</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <property name="spacing">
+            <number>40</number>
+           </property>
+           <property name="leftMargin">
+            <number>40</number>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="rightMargin">
+            <number>40</number>
+           </property>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QWidget" name="gridLayoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>1181</width>
+          <height>981</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="homeButtons_7">
+         <item row="6" column="0">
+          <widget class="QLineEdit" name="passwordUpdate"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>Password</string>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="0">
+          <widget class="QLineEdit" name="niNumUpdate"/>
+         </item>
+         <item row="7" column="2">
+          <widget class="QPushButton" name="changeemailBTN">
+           <property name="text">
+            <string>Change Email</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>Contact number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="usernameLabel_2">
+           <property name="text">
+            <string>Username</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>Company Price</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>CPC number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="2">
+          <spacer name="horizontalSpacer_14">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="5" column="2">
+          <widget class="QPushButton" name="changepwBTN">
+           <property name="text">
+            <string>Change Password</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Email</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>Driving Licence_id</string>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="0">
+          <spacer name="verticalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="21" column="0">
+          <widget class="QLineEdit" name="regNumberUpdate"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="changeunBTN">
+           <property name="text">
+            <string>Change Username</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLineEdit" name="buildingNumUpdate"/>
+         </item>
+         <item row="19" column="0">
+          <widget class="QLineEdit" name="cpcUpdate"/>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLineEdit" name="contactNumUpdate"/>
+         </item>
+         <item row="14" column="0">
+          <widget class="QLineEdit" name="countyUpdate"/>
+         </item>
+         <item row="15" column="0">
+          <widget class="QLineEdit" name="postcodeUpdate"/>
+         </item>
+         <item row="11" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>Address</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QLineEdit" name="compPriceUpdate"/>
+         </item>
+         <item row="20" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>Registration Number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="0">
+          <widget class="QLineEdit" name="drivingLicIDUpdate"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLineEdit" name="usernameUpdate"/>
+         </item>
+         <item row="24" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>National Insurance Number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLineEdit" name="emailUpdate"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_7" native="true"/>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLineEdit" name="townorCityUpdate"/>
+         </item>
+         <item row="9" column="2">
+          <widget class="QPushButton" name="changecontactnumBTN">
+           <property name="text">
+            <string>Change Contact number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="2">
+          <widget class="QPushButton" name="changeaddressBTN">
+           <property name="text">
+            <string>Change Address</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="2">
+          <widget class="QPushButton" name="changecompPriceBTN">
+           <property name="text">
+            <string>Change Company Price</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="2">
+          <widget class="QPushButton" name="changecpcBTN">
+           <property name="text">
+            <string>Change CPC number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="2">
+          <widget class="QPushButton" name="changeregBTN">
+           <property name="text">
+            <string>Change Registration Number</string>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="2">
+          <widget class="QPushButton" name="changedrivlicBTN">
+           <property name="text">
+            <string>Change Driving Licence_id</string>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="2">
+          <widget class="QPushButton" name="changeniBTN">
+           <property name="text">
+            <string>Change National Insurance Number</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>0</y>
+          <width>1121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QPushButton" name="backBTN_5">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_15">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
